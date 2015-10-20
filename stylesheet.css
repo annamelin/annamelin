@@ -75,7 +75,7 @@ h1, h2, h3, ul {
 	margin-top: -30px;
 }
 
-#owl-demo .item{
+/*#owl-demo .item{
   background: #3fbf79;
   padding: 30px 0px;
   margin: 10px;
@@ -96,7 +96,7 @@ h1, h2, h3, ul {
   -ms-user-select: none;
   user-select: none;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-}
+}*/
 
 .right-big {
 	height: 60%;
@@ -181,27 +181,28 @@ h1, h2, h3, ul {
 }
 .modal p,.modal h2 {
 	color: black;
-
 }
+
 .modal:target:before {
   display: block;
 }
+
 .modal:target .modal-dialog {
   -webkit-transform: translate(0, 0);
   -ms-transform: translate(0, 0);
   transform: translate(0, 0);
-  top: 20%;
+  top: 0%;
 }
 .modal-dialog {
-  background: #fefefe;
+  background: #fefefe; 
   border: #333333 solid 1px;
   border-radius: 5px;
   margin-left: -200px;
   position: fixed;
   left: 50%;
-  top: -100%;
+  top: 50%;
   z-index: 11;
-  width: 360px;
+  width: 400px;
   -webkit-transform: translate(0, -500%);
   -ms-transform: translate(0, -500%);
   transform: translate(0, -500%);
@@ -211,21 +212,21 @@ h1, h2, h3, ul {
   transition: transform 0.3s ease-out;
 }
 .modal-body {
-  padding: 20px;
+  padding: 2px;
 }
+
 .modal-header,
 .modal-footer {
   padding: 10px 20px;
 }
-.modal-header {
-  border-bottom: #eeeeee solid 1px;
-}
-.modal-header h2 {
-  font-size: 20px;
-}
+
 .modal-footer {
   border-top: #eeeeee solid 1px;
   text-align: right;
+}
+
+.modal-body img {
+	width: 100%;
 }
 /*ADDED TO STOP SCROLLING TO TOP*/
 #close {
