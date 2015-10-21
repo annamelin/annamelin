@@ -191,7 +191,7 @@ h1, h2, h3, ul {
   -webkit-transform: translate(0, 0);
   -ms-transform: translate(0, 0);
   transform: translate(0, 0);
-  top: 0%;
+  top: 0%; /*hur högt upp på sidan den ligger*/
 }
 .modal-dialog {
   background: #fefefe; 
@@ -202,7 +202,7 @@ h1, h2, h3, ul {
   left: 50%;
   top: 50%;
   z-index: 11;
-  width: 400px;
+  width: 400px; /*storlek på boxen*/
   -webkit-transform: translate(0, -500%);
   -ms-transform: translate(0, -500%);
   transform: translate(0, -500%);
@@ -234,6 +234,12 @@ h1, h2, h3, ul {
 }
 
 @media (max-width: 768px) {
+  .left, .right {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
   .left, .right {
     width: 100%;
   }
